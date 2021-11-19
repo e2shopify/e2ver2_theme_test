@@ -1,0 +1,119 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "8cf5198f-f9cd-4c94-9a2a-5fb4c078ca1f": {
+          "type": "restock",
+          "settings": {
+            "restock": "{{ product.metafields.my_fields.restock_info.value }}"
+          }
+        },
+        "df7779f3-da10-4a22-b5c3-c6e98d9c5cf3": {
+          "type": "restock_variant",
+          "settings": {
+            "restock_variant": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        },
+        "898699ba-ad07-4e8f-8d71-7022a3711114": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 15,
+            "text_align": "center",
+            "product": "{{product}}"
+          }
+        },
+        "2a06c419-f059-4f11-9856-37df025c7308": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "subtitle",
+        "price",
+        "quantity_selector",
+        "variant_picker",
+        "description",
+        "buy_buttons",
+        "8cf5198f-f9cd-4c94-9a2a-5fb4c078ca1f",
+        "df7779f3-da10-4a22-b5c3-c6e98d9c5cf3",
+        "share",
+        "898699ba-ad07-4e8f-8d71-7022a3711114",
+        "2a06c419-f059-4f11-9856-37df025c7308"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}
